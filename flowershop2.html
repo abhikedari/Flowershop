@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Title -->
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowerShop</title>
+
+    <!-- End -->
+
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    crossorigin="anonymous"></script>
+
+    <!-- End -->
+
+    
+
+    <!-- google fonts -->
+
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- End -->
+
+
+    <style>
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgb(250, 249, 246);
+        }
+
+        /* Discount Section */
+            .slds{
+                background-color: chocolate;
+                height: 50px;
+                
+            }
+            .slds2{
+            padding-left: 600px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-family:"Bitter", serif;
+            font-size: 1.8rem;
+            font-size: 1.2rem;
+            }
+        /* End */
+
+
+        /* NavBar */
+        .stl11{
+            font-family:"Bitter", serif;
+            font-weight: 800;
+        font-style: normal;
+        font-size: 3rem;
+        padding-left: 610px;
+
+        }
+        .stl1{
+        font-family:"Bitter", serif;
+        padding-right: 800px;
+        
+        
+        
+        }
+
+        
+        .stl2{
+         color: pink;
+         font-family: "Bitter", serif;
+         font-weight: 800;
+        font-style: normal;
+        }
+
+        .st22{
+           
+        }
+    
+    .st{
+      padding-left: 250px;
+      
+      
+      flex-grow: 1;
+      font-size: 1.5rem;
+      }
+
+      /* End */
+
+      /* Birthday */
+
+      .bl{
+            background-color: #f8f8f8; /* Adjust to match your theme */
+            color: #343a40; /* Text color for readability */
+        }
+
+        .edit{
+            background-image: url(bday.jpg);
+            background-size: cover; /* Ensures the image covers the section */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            height: 500px; /* Adjust the height as needed */
+            width: 100%; /* Ensures the section takes up the full width of the container */
+            display: flex; /* Enables Flexbox layout */
+            justify-content:flex-start; /* Centers content horizontally */
+            align-items: center; /* Centers content vertically */
+            position: relative; /* Needed for absolute positioning of the box */
+        }
+        .container {
+            /* Optional: Adjust container width */
+            max-width: 80%; /* Ensures the container width is 80% of its parent, adjust as needed */
+            margin-left: 50px; /* Aligns container to the left */
+            margin-right: auto; /* Ensures the container doesn't stretch to the right */
+            width: 100%; /* Ensures the container takes up the full width of its parent */
+            margin-bottom: 50px;
+            
+            }
+
+        /* End */
+
+        /* Card section */
+            .card-section {
+            display: grid; /* Use CSS Grid for layout */
+            grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+            gap: 20px; /* Space between cards */
+            background-color: white; /* Background color of the section */
+            padding: 20px; /* Padding around the section */
+            text-align: center;
+            }
+
+            .card {
+            display: flex;
+            flex-direction: column;
+            background-color: transparent; /* No border for card itself */
+            box-shadow: none; /* Remove card shadow */
+            }
+
+            .card-img-top {
+            width: 100%; /* Ensures the image fills the card width */
+            height: auto; /* Maintains image aspect ratio */
+            border: 2px solid #ddd; /* Border around the image */
+            border-radius: 5px; /* Optional: Adds rounded corners to the image */
+            }
+
+            .card-body {
+            background-color: #f8f9fa; /* Background color for card body, adjust as needed */
+            padding: 10px; /* Adjust padding as needed */
+            }
+
+        /*end*/
+
+
+
+        .style1{
+        font-family: "Montserrat", sans-serif;
+    }
+
+    
+    .style2{
+        font-family: "Oswald", sans-serif;
+        color: black;
+    }
+
+    
+    .email-container{
+        text-align: left;
+        padding-left: 100px;
+    }
+
+    .style3{
+        margin-bottom: 30px;
+        
+    }
+
+    .style4{
+        margin-left: 200px;
+        
+    }
+    .style5{
+        margin-left: 150px;;
+    }
+
+    .ak{
+      font-family: "Bitter", serif;
+      font-size: 80px;
+    }
+
+    .log{
+      margin-left: 400px;
+      font-size: 2rem;
+      
+     
+    }
+    .log .bi-person-circle {
+      font-size: 2rem; /* Increase the size as needed */
+    }
+
+    /* End */
+
+
+    /* Freindship */
+    .frnd {
+    display: flex;
+    height: 60vh; /* Adjust as needed */
+    }
+
+    .column {
+        flex: 1;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        display: flex; /* Flexbox for column */
+        padding-top: 30px; /* Center vertically */
+        justify-content: center; /* Center horizontally */
+    }
+
+    .column-1 {
+        background-image: url('think.jpg');
+    }
+
+    .content {
+    text-align: center; /* Center text horizontally */
+    }
+
+    
+
+    .column-2{
+        background-image: url('frendship.jpg');
+    }
+    /* End */
+
+
+    /* Love */
+
+        .background-section {
+        position: relative;
+        width: 100%;
+        height: 60vh; /* Adjust height as needed */
+        background-image: url('love.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+         /* Center content vertically */
+        
+        color: black; /* Adjust text color based on background */
+        text-align: start; /* Center text horizontally */
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            
+            align-items: start;
+        justify-content: flex-start;
+           
+            padding: 20px;
+        }
+        
+        .btn22{
+        margin-top: 20px; /* Space between text and button */
+        padding: 10px 20px;
+         
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+}
+
+/* Love Heading */
+        .heading-2 {
+            line-height: 1.5;
+            letter-spacing: 0;
+            font-family: NIB Light Italic, serif;
+            font-weight: 500;
+            font-size: 1.8020324707rem;
+        }
+       
+       
+        
+
+        .love1{
+            margin-top: 80px;
+            
+            padding-left: 300px;
+            font-family: "Bitter", serif;
+         font-weight: 800;
+        font-style: normal;
+        }
+
+        
+        
+
+
+    /* End */
+
+
+    /* cardstarts */
+    .image-container, .text-container {
+    width: 100%; /* Ensure both containers take up the same width */
+    }
+
+    .item-stacked_imageBorder__XG3Rb img {
+    width: 100%; /* Ensure the image fits within its container */
+    height: auto; /* Maintain aspect ratio */
+    }
+
+    .text-container {
+        background-color: rgb(193, 227, 158);
+    }
+
+    /* End */
+
+    /* Card space */
+    .start1{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        box-sizing: border-box;
+        border: 0 solid #ccc;
+        box-sizing: inherit;
+        font-family: Oldschool Grotesk Light, sans-serif;
+        --navigation-height: 0px;
+        line-height: inherit;
+        gap: 3rem; /* Add space between cards */
+        margin: -0.5rem; /* Adjust vertical spacing between rows */
+        
+        
+    }
+    .item-stacked_imageBorder__XG3Rb, .text-container {
+    border-radius: 8px; /* Border radius for rounded corners */
+    overflow: hidden; /* Ensure image and content are clipped within the border radius */
+    }
+
+    .item-stacked_imageBorder__XG3Rb img {
+        width: 100%; /* Ensure the image fits within its container */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 8px 8px 0 0; /* Round top corners of the image */
+    }
+
+    .text-container {
+        background-color: rgb(193, 227, 158);
+        border-radius: 0 0 8px 8px; /* Round bottom corners of the text container */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center text vertically */
+        align-items: center; /* Center text horizontally */
+        text-align: center; /* Center text alignment */
+        height: 60px; /* Set a fixed height for the text container to align items */
+    }
+
+        /* Ensure each card takes up equal space */
+    .col-lg-3, .col-md-4, .col-6 {
+        flex: 1 1 21%; /* Adjust width for 4 cards per row, considering margins */
+        max-width: 21%; /* Ensure no overflow */
+    }
+    
+    /* Card Text */
+    .text22{
+        
+        
+       
+        
+        text-align: center;
+        font-size: 4rem;
+        font-family: "Gupter", serif;
+        font-weight: 400;
+        font-style: normal;
+        padding-top: 20px;
+    }
+
+    
+
+
+  
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Discount section -->
+    <section class="slds" id="home">
+        <!-- As a link -->
+      <nav class="navbar " >
+        <div class="container-fluid ">
+            
+        <marquee direction="left" width="100%" scrollamount="15"><p class="slds2"><i>10% Off All Items – Discount Applied!</i></p></marquee>
+            
+        </div>
+      </nav>
+    </section>
+
+
+    <!-- navbar -->
+    <div  class="st1">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary " >
+  
+
+            <div class="container-fluid " >
+
+                        <!-- Logo -->
+            <div class="navbar-brand-container">
+                <a class="navbar-brand "  href="#" >
+                    <span class="stl11">Flower<span class="stl2">Shop</span></span>
+                </a>
+            </div>
+            <!-- End -->
+
+            <!-- Home button starts -->
+            <div class="collapse navbar-collapse " id="navbarSupportedContent " >
+                <section class="st">
+                    <span class="items">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0  " >
+                        <li class="nav-item">
+                            <a class="nav-link active  stl1" aria-current="page" href="#home">Home</a>
+                        </li>
+  
+                        <!-- About Button -->
+                        <li class="nav-item">
+                            <a class="nav-link active stl1" aria-current="page" href="#Bs">Bestsellers</a>
+                        </li>
+  
+                        <!-- shop Button -->
+                        <li class="nav-item">
+                            <a class="nav-link active stl1" aria-current="page" href="#shopbyoc">Shop</a>
+                        </li>
+  
+                        <!-- contact Button -->
+                        <li class="nav-item">
+                            <a class="nav-link active stl1" aria-current="page" href="#contact">Contact</a>
+                        </li>
+  
+                       
+                        
+                    </span>
+                </section>
+                      
+            </div>
+            
+        </nav>
+    </div>
+
+    <!-- End -->
+
+    <!-- Next Navbar starts -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+          <div class="d-flex justify-content-center w-100 std1s  st22">
+            <a class="navbar-brand mx-4" href="#">Most Popular</a>
+            <a class="navbar-brand mx-4" href="#">Birthday</a>
+            
+            <a class="navbar-brand mx-4" href="#">Sympathy</a>
+            <a class="navbar-brand mx-4" href="#">occasion</a>
+            <a class="navbar-brand mx-4" href="#">Flowers</a>
+            <a class="navbar-brand mx-4" href="#">Plants</a>
+            <a class="navbar-brand mx-4" href="#">Gifts</a>
+          </div>
+          
+          
+          
+               
+          
+        </div>
+    </nav>
+
+    <!-- End -->
+
+
+    <!-- birthday -->
+   <section class=" edit" >
+   
+            <div class="container text-center bl" style="width: 50%;">
+            <div class="row">
+                <div class="col">
+                <div class="gift-box p-4 border rounded">
+                    <p class="mb-2">Find the perfect gift</p>
+                    <p class="mb-4">Start here to narrow your search</p>
+                    
+                    <div class="d-flex mb-3">
+                    <input type="text" class="form-control me-2" placeholder="Delivery Zip Code">
+                    
+                    <input type="date" class="form-control">
+                    </div>
+                    
+                    <button class="btn btn-dark text-white">Search Available Gifts</button>
+                </div>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <!-- End -->
+
+
+    <!-- card section -->
+     <!-- Card Section -->
+      
+     <br>
+     <h2 id="Bs"  style="text-align: center; background-color: white; width: 100%;" data-aos="fade-up" >The Best Sellers</h2>
+        
+      <section id="shop" class="card-section" data-aos="fade-up">
+         <!-- flower1 -->
+              <div class="card" data-aos="fade-up">
+                <img src="card1.webp" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <p>Luminous Morning Bouquet</p>
+                    Rs. 500-800
+                    <br><br>
+                    <button type="button" class="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+
+              <!-- flower2 -->
+              <div class="card" data-aos="fade-up">
+                <img src="card2.webp" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <p>Neon Lights Bouquet</p>
+                    Rs. 600-800
+                    <br><br>
+                    <button type="button" class="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+
+              <!-- flower3 -->
+              <div class="card" data-aos="fade-up">
+                <img src="card3.webp" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <p>Rosy Radiance Bouquet</p>
+                    Rs. 1000-1200
+                    <br><br>
+                    <button type="button" class="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+
+              <!-- flower4 -->
+              <div class="card" data-aos="fade-up">
+                <img src="card4.webp" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <p>Colorful Carnival Bouquet</p>
+                    Rs. 1500-1800
+                    <br><br>
+                    <button type="button" class="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+
+      
+
+        <!-- Additional cards -->
+        <!-- Add more cards here as needed -->
+    </section>
+
+    <br>
+
+
+    <!-- Freindship day -->
+    <div class="frnd">
+        <div class="column column-1" data-aos="fade-left">
+            <div class="content">
+                <h1>thinking of you</h1>
+                <p>Surprise your loved ones</p>
+                <button class="btn btn-dark text-white">Shop thinking of you</button>
+            </div>
+        </div>
+        <div class="column column-2" data-aos="fade-right">
+            <div class="content">
+                <h1>freindship day</h1>
+                <p>Surprise your freinds with flowers on before August 30 </p>
+                <button class="btn btn-dark text-white">Shop For Freinds</button>
+            </div>
+        </div>
+    </div>
+     <!-- End -->
+
+     <br><br>
+
+
+     <!-- Love -->
+
+     <section class="background-section" >
+        <div class="overlay love1" data-aos="fade-up">
+            <h2 class="mt-0 mb-0 text-align-left heading-2 head1">Share your love</h2>
+            <p class="mt-0 py-2 mb-0 text-align-left text-body">Make them feel extra special this anniversary.</p>
+            <button class="btn  btn22 btn-dark text-white">Shop For Your Love</button>
+        </div>
+    </section>
+    
+
+     <!-- End -->           
+
+
+    <!-- Text -->
+    <div class="col-12 " id="shopbyoc">
+        <h2 class="text22">shop by occasion</h2>
+    </div>
+
+
+    <!-- card-->
+<div class="row justify-content-center mt-5 mb-2 start1">
+    <div class="col-lg-3 col-md-4 col-6 pb-3 mb-4" data-aos="fade-left">
+        <div aria-label="Item 1 of 8" tabindex="0" class="flex flex-col align-items-stretch">
+            <div class=" item-stacked_imageBorder__XG3Rb image-container">
+                <a href="flowershop.html" class="text-decoration-none  ">
+                    <img src="sympathy1.webp">
+                </a>
+            </div>
+    
+            <div class="flex-grow-1 p-3 text-container " style="background-color: rgb(193, 227, 158);">
+                <a href="flowershop.html" class="text-decoration-none  ">
+                    <p class="mt-0 mb-3 mx-0 mt-0 font-weight-500 text-align-center  text-align-left " style="color: black;">Sympathy</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+<!-- 2 -->
+    <div class="col-lg-3 col-md-4 col-6 pb-3 mb-4">
+        <div aria-label="Item 2 of 8" tabindex="0" class="flex flex-col align-items-stretch" data-aos="fade-left">
+            <div class=" item-stacked_imageBorder__XG3Rb image-container">
+                <a href="birthday.html" class="text-decoration-none ">
+                    <img src="bday1.jpg">
+                </a>
+            </div>
+    
+            <div class="flex-grow-1 p-3  text-container" style="background-color: rgb(193, 227, 158);">
+                <a href="birthday.html" class="text-decoration-none  "> 
+                    <p class="mt-0 mb-3 mx-0 mt-0 font-weight-500 text-align-center mb-0 text-align-left text-base" style="color: black;">Birthday</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="col-lg-3 col-md-4 col-6 pb-3 mb-4">
+        <div aria-label="Item 3 of 8" tabindex="0" class="flex flex-col align-items-stretch" data-aos="fade-right">
+            <div class=" item-stacked_imageBorder__XG3Rb image-container">
+                <a href="getwell.html" class="text-decoration-none ">
+                <img src="getwell.jpg">
+            </a>
+            </div>
+    
+            <div class="flex-grow-1 p-3 text-container" style="background-color: rgb(193, 227, 158);">
+                <a href="getwell.html" class="text-decoration-none  ">
+                    <p class="mt-0 mb-3 mx-0 mt-0 font-weight-500 text-align-center mb-0 text-align-left text-base" style="color: black;">Get Well</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="col-lg-3 col-md-4 col-6 pb-3 mb-4">
+        <div aria-label="Item 4 of 8" tabindex="0" class="flex flex-col align-items-stretch" data-aos="fade-right">
+            <div class=" item-stacked_imageBorder__XG3Rb image-container">
+                <a href="justbecause.html" class="text-decoration-none ">
+                <img src="justbec.jpg">
+            </a>
+            </div>
+    
+            <div class="flex-grow-1 p-3 text-container" style="background-color: rgb(193, 227, 158);" >
+                <a href="justbecause.html" class="text-decoration-none " >
+                    <p class="mt-0 mb-3 mx-0 mt-0 font-weight-500 text-align-center mb-0 text-align-left text-base" style="color: black;">Just Because</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="col-lg-3 col-md-4 col-6 pb-3 mb-4">
+        <div aria-label="Item 5 of 8" tabindex="0" class="flex flex-col align-items-stretch" data-aos="fade-left">
+            <div class=" item-stacked_imageBorder__XG3Rb image-container">
+                <a href="anniversary.html" class="text-decoration-none ">
+                <img src="anniversary.jpg">
+            </a>
+            </div>
+    
+            <div class="flex-grow-1 p-3 text-container" style="background-color: rgb(193, 227, 158);">
+                <a href="anniversary.html" class="text-decoration-none ">
+                    <p class="mt-0 mb-3 mx-0 mt-0 font-weight-500 text-align-center mb-0 text-align-left text-base" style="color: black;">Anniversary</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="col-lg-3 col-md-4 col-6 pb-3 mb-4">
+        <div aria-label="Item 6 of 8" tabindex="0" class="flex flex-col align-items-stretch" data-aos="fade-left">
+            <div class=" item-stacked_imageBorder__XG3Rb image-container">
+                <a href="congratulation.html" class="text-decoration-none ">
+                <img src="congrats.jpg">
+            </a>
+            </div>
+    
+            <div class="flex-grow-1 p-3 text-container " style="background-color: rgb(193, 227, 158);">
+                <a href="congratulation.html" class="text-decoration-none  ">
+                    <p class="mt-0 mb-3 mx-0 mt-0 font-weight-500 text-align-center mb-0 text-align-left text-base" style="color: black;">Congratulations</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="col-lg-3 col-md-4 col-6 pb-3 mb-4">
+        <div aria-label="Item 7 of 8" tabindex="0" class="flex flex-col align-items-stretch" data-aos="fade-right">
+            <div class=" item-stacked_imageBorder__XG3Rb image-container">
+                <a href="thinkingofu.html" class="text-decoration-none ">
+                <img src="thinkofu.jpg">
+                </a>
+            </div>
+    
+            <div class="flex-grow-1 p-3 text-container" style="background-color: rgb(193, 227, 158);" >
+                <a href="thinkingofu.html" class="text-decoration-none  ">
+                    <p class="mt-0 mb-3 mx-0 mt-0 font-weight-500 text-align-center mb-0 text-align-left text-base" style="color: black;">Thinking Of You</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="col-lg-3 col-md-4 col-6 pb-3 mb-4">
+        <div aria-label="Item 8 of 8" tabindex="0" class="flex flex-col align-items-stretch" data-aos="fade-right">
+            <div class=" item-stacked_imageBorder__XG3Rb image-container">
+                <a href="samedaydelivery.html" class="text-decoration-none ">
+                <img src="samedaydelivery.jpg">
+            </a>
+            </div>
+    
+            <div class="flex-grow-1 p-3 text-container" style="background-color: rgb(193, 227, 158);">
+                <a href="samedaydelivery.html" class="text-decoration-none  ">
+                    <p class="mt-0 mb-3 mx-0 mt-0 font-weight-500 text-align-center mb-0 text-align-left text-base" style="color: black;">Same Day Delivery</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<!-- End -->
+
+<!-- Footer -->
+<section style="margin-top: 10px; margin-bottom: 0px;" id="contact" >
+
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+        <div class=" my-5 std"  >
+
+
+        <footer class="bg-dark text-center text-lg-start text-white" style="padding-left: 180px;"  data-aos="fade-up">
+        <!-- Grid container -->
+        <div class="container p-4" >
+            <!--Grid row-->
+            <div class="row mt-4">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Explore our flowers</h5>
+
+                <ul class="list-unstyled mb-0">
+                    <li>
+                    <a href="#!" class="text-white" style="text-decoration: none;"><i class="fas fa-seedling fa-fw fa-sm me-2"></i>Bestsellers</a>
+                    </li>
+                    <li>
+                    <a href="#!" class="text-white" style="text-decoration: none;"><i class="fas fa-seedling fa-fw fa-sm me-2"></i>All flowers</a>
+                    </li>
+                    <li>
+                    <a href="#!" class="text-white" style="text-decoration: none;"><i class="fas fa-seedling fa-fw fa-sm me-2"></i>Our collections</a>
+                    </li>
+                    <li>
+                    <a href="#!" class="text-white" style="text-decoration: none;"><i class="fas fa-seedling fa-fw fa-sm me-2"></i>Special offers</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Customer Service</h5>
+
+                <ul class="list-unstyled">
+                <li>
+                    <a href="#!" class="text-white" style="text-decoration: none;"><i class="fas fa-phone fa-fw fa-sm me-2"></i>Contact Us</a>
+                </li>
+                <li>
+                    <a href="#!" class="text-white" style="text-decoration: none;"><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Delivery Information</a>
+                </li>
+                <li>
+                    <a href="#!" class="text-white" style="text-decoration: none;"><i class="fas fa-exchange-alt fa-fw fa-sm me-2"></i>Returns & Exchanges</a>
+                </li>
+                <li>
+                    <a href="#!" class="text-white" style="text-decoration: none;"><i class="fas fa-info-circle fa-fw fa-sm me-2"></i>FAQs</a>
+                </li>
+                </ul>
+                
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Flower Shop</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                        <a href="#!" class="text-white" style="text-decoration: none;">Blooming Florist</a>
+                        </li>
+                        <li>
+                        <a href="#!" class="text-white" style="text-decoration: none;">456 Flower St</a>
+                        </li>
+                        <li>
+                        <a href="#!" class="text-white" style="text-decoration: none;">Pune</a>
+                        </li>
+                        <li>
+                        <a href="#!"  style="text-decoration: none; color: lightblue;"><i class="fas fa-phone-alt fa-fw fa-sm me-2"></i>Contact Us</a>
+                        </li>
+                        <li>
+                        <a href="#!"  style="text-decoration: none; color:lightblue"><i class="fas fa-envelope fa-fw fa-sm me-2"></i>Email Us</a>
+                        </li>
+                    </ul>
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Write to us</h5>
+
+                <ul class="list-unstyled">
+                <li>
+                    <a href="#!" class="text-white" style="text-decoration:none;"><i class="fas fa-at fa-fw fa-sm me-2"></i>Help in purchasing</a>
+                </li>
+                <li>
+                    <a href="#!" class="text-white" style="text-decoration:none;"><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Check the order status</a>
+                </li>
+                <li>
+                    <a href="#!" class="text-white" style="text-decoration:none;"><i class="fas fa-envelope fa-fw fa-sm me-2"></i>Join the Community</a>
+                </li>
+                </ul>
+            </div>
+            <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+    
+
+        <!-- Copyright -->
+        <div class="bg-dark text-center  text-white"  style="background-color: rgba(0, 0, 0, 0.2) ; padding-right: 280px; " >
+            © 2021 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">FlowerShop.com</a>
+        </div>
+        <!-- Copyright -->
+        
+
+        </div>
+        <!-- End of .container -->
+    </footer>
+
+
+    
+        
+        </section>
+
+        <!-- End -->
+
+
+
+     
+   <!-- Animation script -->
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init({
+        offset: 200, 
+        duration: 2000,
+     }
+     );
+   </script>
+</body>
+</html>

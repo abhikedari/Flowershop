@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body, html{
+            height: 100%;
+            margin-top: 20px;
+            margin-bottom: 80px;
+        }
+
+        .st{
+            background-image: url(flowersbgreg.webp);
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .st1{
+            border: 1px solid black;
+            width: 400px;
+            height: 350px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="st">
+        <div class="container mt-5 st1">
+            <h2 class="text-center">Sign In</h2>
+            <form action="flowershop.html" method="get">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+            
+                <p class="text-center mt-3">
+                     Don't have an account? <a href="loginflower.html">Sign Up</a>
+                </p>
+             </form>
+        </div>
+
+    </div>
+</body>
+</html>
